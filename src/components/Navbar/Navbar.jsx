@@ -22,18 +22,18 @@ const Navbar = () => {
         <ul
           tabIndex={0}
           className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <Link>home</Link>
-            <Link>Coffes</Link>
-            <Link>Dashbaord</Link>
+            <Link to={'/'}>home</Link>
+            <Link to={'/coffees'}>Coffes</Link>
+            <Link to={'/dashboard'}>Dashbaord</Link>
         </ul>
       </div>
       <a className="btn btn-ghost text-xl">COFFE_BOOK</a>
     </div>
     <div className="navbar-end hidden md:flex">
       <ul className="menu gap-6 menu-horizontal px-1">
-        <Link>home</Link>
-        <Link>Coffes</Link>
-        <Link>Dashboard</Link>
+        <Link to={'/'}>home</Link>
+        <Link to={'/coffees'}>Coffes</Link>
+        <Link to={'/dashboard'}>Dashboard</Link>
       </ul>
     </div>
   </div>

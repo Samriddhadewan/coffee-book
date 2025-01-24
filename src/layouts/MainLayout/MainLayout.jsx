@@ -9,7 +9,7 @@ const MainLayout = () => {
         <Navbar></Navbar>
 
         {/* daynamic section  */}
-        <div className="min-h-[80vh] p-6">
+        <div className="min-h-[80vh] p-12">
           <Outlet></Outlet>
 
         </div>
