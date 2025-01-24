@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Links } from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to={'/dashboard'}>Dashbaord</Link>
         </ul>
       </div>
-      <a className="btn btn-ghost text-xl">COFFE_BOOK</a>
+      <Link to={'/'} className="btn btn-ghost text-xl">COFFE_BOOK</Link>
     </div>
     <div className="navbar-end hidden md:flex">
       <ul className="menu gap-6 menu-horizontal px-1">
