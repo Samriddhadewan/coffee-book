@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout/MainLayout";
 import Home from "../components/Home/Home";
 import Dashboard from "../components/Dashboard/Dashboard";
 import Coffees from "../components/Coffees/Coffees";
+import CategoryCards from "../components/CategoryCards/CategoryCards";
 
 const routes = createBrowserRouter([
     {path : '/',
@@ -11,7 +12,14 @@ const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home> 
+        element: <Home></Home>, 
+        loader : () => fetch('/categories.json'),
+        children: [
+          {path: "/category/:category",
+           element: <CategoryCards></CategoryCards> 
+          },
+          
+        ]
       },
       {
         path: "/dashboard",
