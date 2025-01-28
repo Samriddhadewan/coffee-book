@@ -12,7 +12,7 @@ const Categories = ({ categories }) => {
             role="tab"
             className="tab border border-red-700 "
           >
-            {category.category}
+            {category.category}.
           </Link>
         ))}
       </div>
